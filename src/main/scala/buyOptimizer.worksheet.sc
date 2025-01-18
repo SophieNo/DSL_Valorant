@@ -1,9 +1,10 @@
 import valorantdsl.* 
 import strategy.GameDataParser
+import enums.*
 
-
-"Duelist".playWith(3000.credits).onMap("Ascent").inRound("Eco").preferredAs("").build()
-
-"Duelist".playWith(3000.credits).build()
-
-val gameData = GameDataParser.getGameData.weapons
+Character.Jett
+  .playWith(3000.credits)
+  .onMap(Map.Ascent)
+  .inRound(RoundType.FullBuy)
+  .preferredAs(Playstyle.Aggressive)
+  .build(3)

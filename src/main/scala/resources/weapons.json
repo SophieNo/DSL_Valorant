@@ -2,29 +2,56 @@
   "weapons": [
     {
       "name": "Phantom",
-      "type": "Rifle",
+      "type": "Weapon",
+      "subtype": "Rifle",
       "cost": 2900,
       "damage": { "head": 156, "body": 39, "legs": 33 },
       "fireRate": 11.0,
       "effectiveRange": "Medium to Long",
-      "recommendedRoles": ["Duelist", "Controller"],
+      "recommendedRoles": ["Duelist", "Controller", "Sentinel", "Initiator"],
       "conditions": {
         "creditsMin": 2900,
         "roundType": ["Full Buy", "Force Buy"],
-        "maps": ["Ascent", "Bind", "Split"],
-        "preferredStyle": "Aggressive"
+        "maps": ["All"]
       }
     },
     {
-      "name": "Spectre",
-      "type": "SMG",
-      "cost": 1600,
-      "damage": { "head": 78, "body": 26, "legs": 22 },
-      "fireRate": 13.33,
-      "effectiveRange": "Close to Medium",
+      "name": "Light Shields",
+      "type": "Weapon",
+      "subtype": "Shield",
+      "cost": 400,
+      "protection": 25,
       "recommendedRoles": ["All"],
       "conditions": {
-        "roundType": ["Eco", "Force Buy"],
+        "creditsMin": 400,
+        "roundType": ["Full Buy", "Force Buy", "Eco"],
+        "maps": ["All"]
+      }
+    },
+    {
+      "name": "Dash",
+      "type": "Weapon",
+      "subtype": "Ability",
+      "cost": 150,
+      "character": "Jett",
+      "description": "Quickly dash in the direction Jett is moving.",
+      "recommendedRoles": ["Duelist"],
+      "conditions": {
+        "creditsMin": 150,
+        "roundType": ["Full Buy", "Force Buy", "Eco"],
+        "maps": ["All"]
+      }
+    },
+    {
+      "name": "Flashbang",
+      "type": "Weapon",
+      "subtype": "Utility",
+      "cost": 250,
+      "description": "Generic flashbang to disorient enemies.",
+      "recommendedRoles": ["All"],
+      "conditions": {
+        "creditsMin": 250,
+        "roundType": ["Full Buy", "Force Buy"],
         "maps": ["All"]
       }
     }

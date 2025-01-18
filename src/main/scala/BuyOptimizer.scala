@@ -1,4 +1,5 @@
 import strategy.*
+import enums.*
 
 package object valorantdsl {
     //suggestions de copilot j verrai plus tard hein
@@ -23,44 +24,48 @@ package object valorantdsl {
 //   // TODO: Add more preferred styles
 //   sealed trait PreferredStyle
   case class PlayerSetup(
-    role: Option[String] = None,
+    character: Character.Character,
     credits: Int,
-    map: Option[String] = None,
-    roundType: Option[String] = None,
-    preferredStyle: Option[String] = None
+    map: Option[Map.Map] = None,
+    roundType: Option[RoundType.RoundType] = None,
+    preferredStyle: Option[Playstyle.Playstyle] = None
   )
 
   extension (amount: Int) {
     def credits: Int = amount
   }
 
-  extension (role: String) {
-    def playWith(credits: Int): SetupBuilder = new SetupBuilder(role, credits)
+  extension (character: Character.Character) {
+    def playWith(credits: Int): SetupBuilder = new SetupBuilder(character, credits)
   }
 
-  class SetupBuilder(role: String, credits: Int) {
-  private var map: Option[String] = None
-  private var roundType: Option[String] = None
-  private var preferredStyle: Option[String] = None
+  extension (n: Int) {
+    def items: Int = n
+  }
 
-  def onMap(mapName: String): this.type = {
-    map = Some(mapName)
+  class SetupBuilder(character: Character.Character, credits: Int) {
+  private var map: Option[Map.Map] = None
+  private var roundType: Option[RoundType.RoundType] = None
+  private var preferredStyle: Option[Playstyle.Playstyle] = None
+
+  def onMap(selectedMap: Map.Map): this.type = {
+    map = Some(selectedMap)
     this
   }
 
-  def inRound(round: String): this.type = {
-    roundType = Some(round)
+  def inRound(selectedRound: RoundType.RoundType): this.type = {
+    roundType = Some(selectedRound)
     this
   }
 
-  def preferredAs(style: String): this.type = {
+  def preferredAs(style: Playstyle.Playstyle): this.type = {
     preferredStyle = Some(style)
     this
   }
 
-  def build(): Unit = {
-    val setup = PlayerSetup(Some(role), credits, map, roundType, preferredStyle)
-    println(Recommender.recommendWeapon(setup))
+  def build(topN: Int): Unit = {
+    val setup = PlayerSetup(character, credits, map, roundType, preferredStyle)
+    Recommender.recommend(setup, Some(character.toString), topN)
   }
 }
 }
