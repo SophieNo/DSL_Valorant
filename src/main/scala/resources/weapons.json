@@ -1,0 +1,32 @@
+{
+  "weapons": [
+    {
+      "name": "Phantom",
+      "type": "Rifle",
+      "cost": 2900,
+      "damage": { "head": 156, "body": 39, "legs": 33 },
+      "fireRate": 11.0,
+      "effectiveRange": "Medium to Long",
+      "recommendedRoles": ["Duelist", "Controller"],
+      "conditions": {
+        "creditsMin": 2900,
+        "roundType": ["Full Buy", "Force Buy"],
+        "maps": ["Ascent", "Bind", "Split"],
+        "preferredStyle": "Aggressive"
+      }
+    },
+    {
+      "name": "Spectre",
+      "type": "SMG",
+      "cost": 1600,
+      "damage": { "head": 78, "body": 26, "legs": 22 },
+      "fireRate": 13.33,
+      "effectiveRange": "Close to Medium",
+      "recommendedRoles": ["All"],
+      "conditions": {
+        "roundType": ["Eco", "Force Buy"],
+        "maps": ["All"]
+      }
+    }
+  ]
+}

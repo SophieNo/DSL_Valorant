@@ -1,0 +1,362 @@
+2025.01.17 15:53:01 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\.metals\lsp.trace.json
+2025.01.17 15:53:21 INFO  logging to files C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\.metals\metals.log
+2025.01.17 15:53:21 INFO  Started: Metals version 1.4.2 in folders 'C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala' for client Visual Studio Code 1.94.2.
+2025.01.17 15:53:21 INFO  time: initialize in 0.16s
+2025.01.17 15:53:27 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+Jan 17, 2025 3:53:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Jan 17, 2025 3:53:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Jan 17, 2025 3:53:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Jan 17, 2025 3:53:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2025.01.17 15:53:51 WARN  no build target for: C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc
+2025.01.17 15:53:51 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.17 15:53:52 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.17 15:53:54 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+Jan 17, 2025 3:53:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+Jan 17, 2025 3:53:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+2025.01.17 15:53:55 INFO  running 'C:\Program Files\Java\jdk-21\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\willi\AppData\Local\Temp\metals1392058617697621839\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2025.01.17 15:54:08 WARN  no build target for: C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc
+2025.01.17 15:54:08 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+Jan 17, 2025 3:54:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+2025.01.17 15:54:15 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.17 15:54:16 ERROR [info] [launcher] getting org.scala-sbt sbt 1.10.6  (this may take some time)...
+2025.01.17 15:54:21 INFO  time: evaluated worksheet 'ValorantWorksheet.worksheet.sc' in 30s
+2025.01.17 15:54:21 WARN  thread interrupt: Evaluating Worksheet ValorantWorksheet.worksheet.sc
+2025.01.17 15:54:21 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.17 15:54:51 INFO  time: evaluated worksheet 'ValorantWorksheet.worksheet.sc' in 30s
+2025.01.17 15:54:51 WARN  thread interrupt: Evaluating Worksheet ValorantWorksheet.worksheet.sc
+2025.01.17 15:54:51 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\ValorantWorksheet.worksheet.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.17 15:55:12 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\buyOptimizer.sc. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.17 15:55:20 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\buyOptimizer.sc. Using presentation compiler with project's scala-library version: 3.3.4
+Jan 17, 2025 3:55:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24
+2025.01.17 15:55:22 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\buyOptimizer.sc. Using presentation compiler with project's scala-library version: 3.3.4
+Jan 17, 2025 3:55:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 26
+2025.01.17 15:55:23 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\buyOptimizer.sc. Using presentation compiler with project's scala-library version: 3.3.4
+Jan 17, 2025 3:55:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+Jan 17, 2025 3:55:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 28
+Jan 17, 2025 3:55:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+2025.01.17 15:55:55 ERROR [info] [launcher] getting Scala 2.12.20 (for sbt)...
+2025.01.17 15:56:13 INFO  [info] welcome to sbt 1.10.6 (Oracle Corporation Java 21.0.1)
+2025.01.17 15:56:24 INFO  no build target found for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.01.17 15:56:42 INFO  [info] loading settings for project projet-scala-build-build from metals.sbt...
+2025.01.17 15:56:51 INFO  [info] loading project definition from C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\project\project
+2025.01.17 15:57:22 INFO  [info] loading settings for project projet-scala-build from metals.sbt...
+2025.01.17 15:57:24 INFO  [info] loading project definition from C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\project
+2025.01.17 15:58:09 INFO  [success] Generated .bloop\projet-scala-build.json
+2025.01.17 15:58:09 INFO  [success] Total time: 45 s, completed Jan 17, 2025, 3:58:10 PM
+2025.01.17 15:58:27 INFO  [info] loading settings for project root from build.sbt...
+2025.01.17 15:58:28 INFO  [info] set current project to Projet-Scala (in build file:/C:/Users/willi/Desktop/scala_projet_valorant/Projet-Scala/)
+2025.01.17 15:58:45 INFO  [warn] scala3-library_3-3.3.4-sources.jar no longer exists at C:\Users\sophi\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.3.4\scala3-library_3-3.3.4-sources.jar
+2025.01.17 15:58:51 INFO  [success] Generated .bloop\root-test.json
+2025.01.17 15:58:51 INFO  [success] Generated .bloop\root.json
+2025.01.17 15:58:51 INFO  [success] Total time: 22 s, completed Jan 17, 2025, 3:58:51 PM
+2025.01.17 15:58:52 INFO  time: ran 'sbt bloopInstall' in 4m56s
+2025.01.17 15:58:52 INFO  Attempting to connect to the build server...
+2025.01.17 15:58:52 INFO  No running Bloop server found, starting one.
+2025.01.17 15:59:06 INFO  Starting compilation server
+2025.01.17 15:59:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\.metals\bsp.trace.json or C:\Users\willi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.01.17 15:59:15 INFO  Attempting to connect to the build server...
+2025.01.17 15:59:15 INFO  Found a Bloop server running
+2025.01.17 15:59:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\project\.metals\bsp.trace.json or C:\Users\willi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.01.17 15:59:22 INFO  time: Connected to build server in 29s
+2025.01.17 15:59:22 INFO  Connected to Build server: Bloop v2.0.6
+2025.01.17 15:59:23 INFO  time: Imported build in 1.5s
+2025.01.17 15:59:24 INFO  running doctor check
+2025.01.17 15:59:24 INFO  java targets: projet-scala-build, root, root-test
+Jan 17, 2025 3:59:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 33
+2025.01.17 15:59:41 INFO  compiling root (2 scala sources)
+2025.01.17 16:01:06 INFO  time: compiled root in 1m25s
+2025.01.17 16:02:18 INFO  time: indexed workspace in 2m54s
+2025.01.17 16:02:21 INFO  time: code lens generation in 3.05s
+2025.01.17 16:02:22 INFO  time: code lens generation in 3.11s
+2025.01.17 16:02:22 INFO  time: code lens generation in 3.11s
+2025.01.17 16:02:22 INFO  time: code lens generation in 3.13s
+2025.01.17 16:02:22 INFO  time: code lens generation in 3.31s
+Jan 17, 2025 4:02:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 64
+2025.01.17 16:02:57 INFO  time: evaluated worksheet 'ValorantWorksheet.worksheet.sc' in 30s
+2025.01.17 16:02:57 WARN  thread interrupt: Evaluating Worksheet ValorantWorksheet.worksheet.sc
+Jan 17, 2025 4:04:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 113
+Jan 17, 2025 4:04:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 127
+2025.01.17 16:04:48 INFO  time: evaluated worksheet 'ValorantWorksheet.worksheet.sc' in 17s
+Jan 17, 2025 4:04:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 138
+Jan 17, 2025 4:05:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 146
+Jan 17, 2025 4:05:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 147
+Jan 17, 2025 4:05:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 150
+Jan 17, 2025 4:06:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 162
+Jan 17, 2025 4:07:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 287
+Jan 17, 2025 4:07:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 292
+Jan 17, 2025 4:07:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 294
+2025.01.17 16:07:34 INFO  time: evaluated worksheet 'ValorantWorksheet.worksheet.sc' in 15s
+Jan 17, 2025 4:09:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 351
+Jan 17, 2025 4:09:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 379
+2025.01.17 16:12:07 INFO  compiling root (1 scala source)
+2025.01.17 16:12:12 INFO  time: compiled root in 5.06s
+Jan 17, 2025 4:12:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 423
+2025.01.17 16:12:18 INFO  compiling root (1 scala source)
+Jan 17, 2025 4:12:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 431
+Jan 17, 2025 4:12:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 437
+Jan 17, 2025 4:12:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 441
+2025.01.17 16:12:34 INFO  time: compiled root in 16s
+2025.01.17 17:40:24 INFO  compiling root (1 scala source)
+2025.01.17 17:40:24 INFO  time: compiled root in 0.5s
+2025.01.17 17:40:29 INFO  compiling root (1 scala source)
+Jan 17, 2025 5:40:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 639
+2025.01.17 17:40:36 INFO  time: compiled root in 7.3s
+2025.01.17 17:43:32 INFO  compiling root (1 scala source)
+2025.01.17 17:43:37 INFO  time: compiled root in 4.74s
+Jan 17, 2025 5:43:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 698
+Jan 17, 2025 5:43:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 702
+Jan 17, 2025 5:43:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 713
+2025.01.17 17:43:57 INFO  time: evaluated worksheet 'ValorantWorksheet.worksheet.sc' in 15s
+2025.01.17 17:47:01 INFO  compiling root (1 scala source)
+2025.01.17 17:47:16 INFO  time: compiled root in 14s
+2025.01.17 17:48:03 INFO  time: evaluated worksheet 'ValorantWorksheet.worksheet.sc' in 12s
+Jan 17, 2025 5:48:27 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\.metals\.reports\metals-full\2025-01-17\r_compiler-error_(root)_17-48-27-662.md
+Jan 17, 2025 5:48:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 827
+2025.01.17 17:48:36 INFO  time: evaluated worksheet 'buyOptimizer.worksheet.sc' in 8.99s
+Jan 17, 2025 5:50:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 844
+Jan 17, 2025 5:50:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 848
+Jan 17, 2025 5:50:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 853
+2025.01.17 17:51:05 INFO  time: evaluated worksheet 'ValorantWorksheet.worksheet.sc' in 9.95s
+2025.01.17 17:51:07 INFO  time: evaluated worksheet 'buyOptimizer.worksheet.sc' in 2.01s
+2025.01.17 18:19:14 INFO  compiling root (1 scala source)
+2025.01.17 18:19:18 INFO  time: compiled root in 3.62s
+2025.01.17 18:19:29 INFO  compiling root (1 scala source)
+2025.01.17 18:19:33 INFO  time: compiled root in 4.38s
+2025.01.17 18:19:34 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+2025.01.17 18:19:34 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+2025.01.17 18:19:35 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+2025.01.17 18:19:35 INFO  compiling root (1 scala source)
+2025.01.17 18:19:40 INFO  time: compiled root in 4.69s
+2025.01.17 18:20:03 INFO  compiling root (1 scala source)
+2025.01.17 18:20:03 INFO  time: compiled root in 0.68s
+2025.01.17 18:20:16 INFO  compiling root (1 scala source)
+2025.01.17 18:20:19 INFO  time: compiled root in 2.12s
+2025.01.17 18:20:22 INFO  compiling root (1 scala source)
+Jan 17, 2025 6:20:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 974
+Jan 17, 2025 6:20:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 975
+2025.01.17 18:20:26 INFO  time: compiled root in 4.22s
+Jan 17, 2025 6:20:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 981
+2025.01.17 18:20:27 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+Jan 17, 2025 6:20:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 983
+Jan 17, 2025 6:20:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 985
+Jan 17, 2025 6:20:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 986
+2025.01.17 18:20:27 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+Jan 17, 2025 6:20:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 988
+Jan 17, 2025 6:20:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 989
+Jan 17, 2025 6:20:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 993
+Jan 17, 2025 6:20:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 994
+Jan 17, 2025 6:20:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 995
+2025.01.17 18:20:28 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+Jan 17, 2025 6:20:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 997
+Jan 17, 2025 6:20:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 999
+2025.01.17 18:20:28 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+Jan 17, 2025 6:20:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1002
+2025.01.17 18:20:29 INFO  compiling root (1 scala source)
+2025.01.17 18:20:29 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+2025.01.17 18:20:29 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+2025.01.17 18:20:30 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+2025.01.17 18:20:31 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+2025.01.17 18:20:32 WARN  Could not load snapshot text for C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\src\main\scala\BuyOptimizer.scala
+2025.01.17 18:20:33 INFO  time: compiled root in 3.94s
+2025.01.17 18:20:36 INFO  compiling root (1 scala source)
+Jan 17, 2025 6:20:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1056
+Jan 17, 2025 6:20:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1057
+2025.01.17 18:20:38 INFO  time: compiled root in 2.96s
+Jan 17, 2025 6:20:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1064
+Jan 17, 2025 6:20:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1065
+Jan 17, 2025 6:20:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1066
+Jan 17, 2025 6:20:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1068
+Jan 17, 2025 6:20:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1070
+Jan 17, 2025 6:20:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1071
+Jan 17, 2025 6:20:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1085
+Jan 17, 2025 6:20:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1087
+Jan 17, 2025 6:20:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1088
+Jan 17, 2025 6:20:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1099
+2025.01.17 18:20:44 INFO  compiling root (1 scala source)
+2025.01.17 18:20:47 INFO  time: compiled root in 2.45s
+2025.01.17 18:20:57 INFO  compiling root (1 scala source)
+2025.01.17 18:20:59 INFO  time: compiled root in 1.76s
+2025.01.17 18:21:18 INFO  compiling root (1 scala source)
+2025.01.17 18:21:18 INFO  time: compiled root in 0.9s
+Jan 17, 2025 6:22:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.01.17 18:27:30 INFO  compiling root (1 scala source)
+2025.01.17 18:27:30 INFO  time: compiled root in 0.68s
+Jan 17, 2025 6:27:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1316
+Jan 17, 2025 6:27:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1317
+Jan 17, 2025 6:27:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1318
+Jan 17, 2025 6:27:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1320
+2025.01.17 18:27:35 INFO  compiling root (1 scala source)
+2025.01.17 18:27:36 INFO  time: compiled root in 1.42s
+2025.01.17 18:27:46 INFO  compiling root (1 scala source)
+2025.01.17 18:27:52 INFO  time: compiled root in 5.69s
+2025.01.17 18:28:41 INFO  compiling root (1 scala source)
+2025.01.17 18:28:41 INFO  time: compiled root in 0.29s
+Jan 17, 2025 6:28:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1354
+Jan 17, 2025 6:28:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1355
+Jan 17, 2025 6:28:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1357
+2025.01.17 18:28:44 INFO  compiling root (1 scala source)
+2025.01.17 18:28:44 INFO  time: compiled root in 0.57s
+Jan 17, 2025 6:28:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1366
+2025.01.17 18:28:46 INFO  compiling root (1 scala source)
+2025.01.17 18:28:53 INFO  time: compiled root in 7.63s
+2025.01.17 18:30:37 INFO  compiling root (2 scala sources)
+Jan 17, 2025 6:30:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1391
+Jan 17, 2025 6:30:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1388
+Jan 17, 2025 6:30:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1389
+Jan 17, 2025 6:30:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1390
+2025.01.17 18:30:46 INFO  time: compiled root in 8.96s
+2025.01.17 18:30:46 INFO  compiling root (2 scala sources)
+2025.01.17 18:30:52 INFO  time: compiled root in 5.87s
+2025.01.17 18:31:02 INFO  compiling root (2 scala sources)
+2025.01.17 18:31:06 INFO  time: compiled root in 3.31s
+2025.01.17 18:31:19 INFO  compiling root (2 scala sources)
+2025.01.17 18:31:20 INFO  time: compiled root in 1.61s
+2025.01.17 18:42:18 INFO  compiling root (2 scala sources)
+2025.01.17 18:42:21 INFO  time: compiled root in 2.98s
+2025.01.17 18:42:23 INFO  compiling root (2 scala sources)
+2025.01.17 18:42:24 INFO  time: compiled root in 1.61s
+2025.01.17 18:42:57 INFO  compiling root (2 scala sources)
+2025.01.17 18:42:57 INFO  time: compiled root in 0.57s
+2025.01.17 18:43:05 INFO  compiling root (2 scala sources)
+2025.01.17 18:43:06 INFO  time: compiled root in 1.39s
+2025.01.17 18:44:35 INFO  compiling root (2 scala sources)
+2025.01.17 18:44:37 INFO  time: compiled root in 1.35s
+2025.01.17 18:44:55 INFO  compiling root (2 scala sources)
+2025.01.17 18:44:55 INFO  time: compiled root in 0.56s
+2025.01.17 18:44:59 INFO  compiling root (2 scala sources)
+2025.01.17 18:44:59 INFO  time: compiled root in 0.57s
+2025.01.17 20:44:44 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\.metals\lsp.trace.json
+2025.01.17 20:45:00 ERROR Failed to get project directories
+java.util.concurrent.TimeoutException: Future timed out after [5 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.$anonfun$wrap$1(MetalsProjectDirectories.scala:39)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.wrap(MetalsProjectDirectories.scala:37)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.fromPath(MetalsProjectDirectories.scala:30)
+	at scala.meta.internal.bsp.BspServers$.globalInstallDirectories(BspServers.scala:209)
+	at scala.meta.internal.metals.MetalsServerInputs$.productionConfiguration(MetalsServerInputs.scala:75)
+	at scala.meta.metals.MetalsLanguageServer$.$lessinit$greater$default$3(MetalsLanguageServer.scala:48)
+	at scala.meta.metals.Main$.main(Main.scala:45)
+	at scala.meta.metals.Main.main(Main.scala)
+
+2025.01.17 20:45:38 ERROR Failed to get project directories
+java.util.concurrent.TimeoutException: Future timed out after [5 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.$anonfun$wrap$1(MetalsProjectDirectories.scala:39)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.wrap(MetalsProjectDirectories.scala:37)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.from(MetalsProjectDirectories.scala:23)
+	at scala.meta.internal.metals.BloopServers$.createBloopWorkingDir(BloopServers.scala:439)
+	at scala.meta.internal.metals.BloopServers.<init>(BloopServers.scala:67)
+	at scala.meta.internal.metals.ProjectMetalsLspService.<init>(ProjectMetalsLspService.scala:157)
+	at scala.meta.internal.metals.WorkspaceLspService.createService(WorkspaceLspService.scala:217)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$workspaceFolders$1(WorkspaceLspService.scala:224)
+	at scala.collection.immutable.List.map(List.scala:247)
+	at scala.meta.internal.metals.WorkspaceFolders.initServices(WorkspaceFolders.scala:44)
+	at scala.meta.internal.metals.WorkspaceFolders.<init>(WorkspaceFolders.scala:22)
+	at scala.meta.internal.metals.WorkspaceLspService.<init>(WorkspaceLspService.scala:222)
+	at scala.meta.metals.MetalsLanguageServer.createService(MetalsLanguageServer.scala:219)
+	at scala.meta.metals.MetalsLanguageServer.initialize(MetalsLanguageServer.scala:160)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.01.17 20:45:41 INFO  logging to files C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala\.metals\metals.log
+2025.01.17 20:45:41 INFO  Started: Metals version 1.4.2 in folders 'C:\Users\willi\Desktop\scala_projet_valorant\Projet-Scala' for client Visual Studio Code 1.94.2.

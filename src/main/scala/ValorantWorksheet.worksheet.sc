@@ -13,3 +13,5 @@ val recommendations = recommendForTeam(myTeam)
 
 // Affichage des recommandations
 println(displayRecommendations(recommendations))
+
+
