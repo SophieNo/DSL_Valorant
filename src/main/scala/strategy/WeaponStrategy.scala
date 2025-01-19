@@ -2,6 +2,7 @@ package strategy
 
 import valorantdsl.PlayerSetup
 import enums.*
+import strategy.weapon.{GameDataParser, Weapon}
 
 object Recommender {
   def recommend(setup: PlayerSetup, character: Character.Character, topN: Int): Unit = {
@@ -28,18 +29,21 @@ object Recommender {
   ): List[Weapon] = {
     val gameData = GameDataParser.getGameData
 
+    // Filter available weapons by criteria
     val availableWeapons = gameData.weapons
       .filterNot(w => setup.ownedItems.contains(w.subtype))
       .filter(w => meetsCriteria(w, setup, character))
 
+    // Partition into shields, abilities, and other weapons
     val (shields, abilities, weapons) = availableWeapons.partition3(
       _.subtype == Subtype.Shield,
       w => w.subtype == Subtype.Ability && w.character.contains(character),
       weapon => weapon.subtype == Subtype.Rifle || weapon.subtype == Subtype.Utility
-
     )
 
-    optimizeCombination(shields, abilities, weapons, setup.credits).take(topN)
+    // Optimize the combination based on budget and dynamically adjust for `topN`
+    val optimalCombination = optimizeCombination(shields, abilities, weapons, setup.credits)
+    if (topN > 0) optimalCombination.take(topN) else optimalCombination
   }
 
   private def meetsCriteria(
@@ -94,5 +98,4 @@ object Recommender {
       (first, second, third)
     }
   }
-
 }

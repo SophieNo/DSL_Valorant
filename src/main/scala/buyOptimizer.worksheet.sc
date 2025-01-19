@@ -1,5 +1,4 @@
 import valorantdsl.* 
-import strategy.GameDataParser
 import enums.*
 
 Character.Jett
@@ -8,4 +7,4 @@ Character.Jett
   .inRound(RoundType.FullBuy)
   .preferredAs(Playstyle.Aggressive)
   .owned(Set(Subtype.Shield))
-  .build(3.items)
+  .build(5.items)

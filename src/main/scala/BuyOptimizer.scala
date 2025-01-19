@@ -1,5 +1,6 @@
 import strategy.*
 import enums.*
+import strategy.weapon.Recommender
 
 package object valorantdsl {
     //suggestions de copilot j verrai plus tard hein

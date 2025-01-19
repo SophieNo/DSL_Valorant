@@ -94,6 +94,18 @@
       }
     },
     {
+      "name": "Flashbang",
+      "subtype": "Utility",
+      "cost": 250,
+      "description": "A generic flashbang to disorient enemies.",
+      "recommendedRoles": [],
+      "conditions": {
+        "creditsMin": 250,
+        "roundType": ["FullBuy", "ForceBuy"],
+        "maps": []
+      }
+    },
+    {
       "name": "Ghost",
       "subtype": "Utility",
       "cost": 500,
@@ -103,7 +115,7 @@
       "recommendedRoles": [],
       "conditions": {
         "creditsMin": 500,
-        "roundType": ["PistolRound", "Eco"],
+        "roundType": ["PistolRound", "Eco", "FullBuy"],
         "maps": []
       }
     },
@@ -117,7 +129,7 @@
       "recommendedRoles": [],
       "conditions": {
         "creditsMin": 0,
-        "roundType": ["PistolRound", "Eco"],
+        "roundType": ["PistolRound", "Eco", "FullBuy"],
         "maps": []
       }
     }
