@@ -1,4 +1,4 @@
-package valorant
+ package valorant
 
 // Définition des agents et équipements
 case class Agent(name: String)
