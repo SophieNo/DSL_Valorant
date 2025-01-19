@@ -23,3 +23,7 @@ object Character extends Enumeration {
   val Jett, Omen, Viper, Sage, Sova, Reyna, Phoenix = Value
 }
 
+object Subtype extends Enumeration {
+  type Subtype = Value
+  val Rifle, Shield, Ability, Utility = Value
+}

@@ -1,87 +1,98 @@
 package strategy
 
 import valorantdsl.PlayerSetup
+import enums.*
 
 object Recommender {
-  def recommendWeapons(playerSetup: PlayerSetup, agent: Option[String], topN: Int): List[(Weapon, Double, String)] = {
-    val gameData = GameDataParser.getGameData
-
-    val scoredWeapons = gameData.weapons.flatMap { weapon =>
-      val conditions = weapon.conditions
-
-      val characterScore = agent match {
-        case Some(agentName) if weapon.subtype == "Ability" && weapon.character.contains(agentName) => 2.0
-        case None if weapon.subtype != "Ability"                                                  => 1.0
-        case _                                                                                   => 0.0
-      }
-
-      val creditsScore = conditions.creditsMin match {
-        case Some(minCredits) if playerSetup.credits >= minCredits =>
-          1.0 - math.abs(playerSetup.credits - minCredits).toDouble / playerSetup.credits
-        case None => 1.0
-        case _    => 0.0
-      }
-
-      val mapScore = playerSetup.map match {
-        case Some(map) =>
-          conditions.maps match {
-            case Some(maps) if maps.contains(map.toString) || maps.contains("All") => 1.0
-            case _                                                                 => 0.0
-          }
-        case None => 1.0
-      }
-
-      val roundTypeScore = playerSetup.roundType match {
-        case Some(roundType) =>
-          conditions.roundType match {
-            case Some(roundTypes) if roundTypes.contains(roundType.toString) => 1.0
-            case _                                                           => 0.0
-          }
-        case None => 1.0
-      }
-
-      val styleMatch = playerSetup.preferredStyle match {
-        case Some(style) if weapon.conditions.preferredStyle.contains(style.toString) => 1.0
-        case None if weapon.conditions.preferredStyle.isEmpty                         => 1.0
-        case _                                                                        => 0.0
-      }
-
-
-      val totalScore = characterScore * 2.0 + creditsScore * 1.5 + mapScore + roundTypeScore + styleMatch
-
-      if (totalScore > 0) {
-        val advice = generateAdvice(weapon, playerSetup)
-        Some((weapon, totalScore, advice))
-      } else None
-    }
-
-    scoredWeapons.sortBy(-_._2).take(topN)
-  }
-
-  def generateAdvice(weapon: Weapon, playerSetup: PlayerSetup): String = {
-    weapon.subtype match {
-      case "Rifle" => s"${weapon.name} is a strong choice for long-range engagements. Use its accuracy to control sightlines."
-      case "Shield" => s"${weapon.name} increases survivability. Always prioritize shields for aggressive engagements."
-      case "Ability" => s"${weapon.name} is specific to ${weapon.character.getOrElse("your agent")}. ${weapon.description}"
-      case "Utility" => s"${weapon.name} is versatile. Use it to disrupt enemies or secure site control."
-      case _ => s"${weapon.name} offers unique utility. Adapt your strategy accordingly."
-    }
-  }
-
-  def recommend(playerSetup: PlayerSetup, agent: Option[String], topN: Int): Unit = {
-    val recommendations = recommendWeapons(playerSetup, agent, topN)
+  def recommend(setup: PlayerSetup, character: Character.Character, topN: Int): Unit = {
+    val recommendations = recommendBestCombination(setup, character, topN)
     if (recommendations.isEmpty) {
-      println("No suitable weapons found for the given setup. Try adjusting your strategy or credits.")
+      println("No suitable combination found within your budget. Try adjusting your strategy or credits.")
     } else {
-      println("Recommended Weapons:")
-      recommendations.foreach { case (weapon, score, advice) =>
+      println("Recommended Combination:")
+      recommendations.foreach { weapon =>
         println(s"""
-          |  - ${weapon.name} (Score: ${score.formatted("%.2f")})
+          |  - ${weapon.name}
           |    Subtype: ${weapon.subtype}
           |    Cost: ${weapon.cost} credits
-          |    $advice
+          |    ${weapon.description.getOrElse("")}
         """.stripMargin)
       }
     }
   }
+
+  private def recommendBestCombination(
+    setup: PlayerSetup,
+    character: Character.Character,
+    topN: Int
+  ): List[Weapon] = {
+    val gameData = GameDataParser.getGameData
+
+    val availableWeapons = gameData.weapons
+      .filterNot(w => setup.ownedItems.contains(w.subtype))
+      .filter(w => meetsCriteria(w, setup, character))
+
+    val (shields, abilities, weapons) = availableWeapons.partition3(
+      _.subtype == Subtype.Shield,
+      w => w.subtype == Subtype.Ability && w.character.contains(character),
+      weapon => weapon.subtype == Subtype.Rifle || weapon.subtype == Subtype.Utility
+
+    )
+
+    optimizeCombination(shields, abilities, weapons, setup.credits).take(topN)
+  }
+
+  private def meetsCriteria(
+    weapon: Weapon,
+    setup: PlayerSetup,
+    character: Character.Character
+  ): Boolean = {
+    val conditions = weapon.conditions
+
+    val creditsMatch = conditions.creditsMin.forall(min => setup.credits >= min)
+    val mapMatch = conditions.maps.forall(_.isEmpty || setup.map.exists(conditions.maps.get.contains))
+    val roundMatch = conditions.roundType.forall(_.isEmpty || setup.roundType.exists(conditions.roundType.get.contains))
+    val styleMatch = conditions.preferredStyle.forall(style => setup.preferredStyle.contains(style))
+
+    creditsMatch && mapMatch && roundMatch && styleMatch
+  }
+
+  private def optimizeCombination(
+    shields: List[Weapon],
+    abilities: List[Weapon],
+    weapons: List[Weapon],
+    budget: Int
+  ): List[Weapon] = {
+    val allItems = (shields ++ abilities ++ weapons).sortBy(_.cost)
+    var remainingBudget = budget
+    var selectedItems = List.empty[Weapon]
+
+    def addItemsByPriority(items: List[Weapon]): Unit = {
+      items.foreach { item =>
+        if (item.cost <= remainingBudget) {
+          selectedItems = selectedItems :+ item
+          remainingBudget -= item.cost
+        }
+      }
+    }
+
+    addItemsByPriority(shields.sortBy(-_.protection.getOrElse(0)))
+    addItemsByPriority(abilities)
+    addItemsByPriority(weapons)
+
+    selectedItems
+  }
+
+  implicit class PartitionList[T](list: List[T]) {
+    def partition3(
+      cond1: T => Boolean,
+      cond2: T => Boolean,
+      cond3: T => Boolean
+    ): (List[T], List[T], List[T]) = {
+      val (first, rest) = list.partition(cond1)
+      val (second, third) = rest.partition(cond2)
+      (first, second, third)
+    }
+  }
+
 }

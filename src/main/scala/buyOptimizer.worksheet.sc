@@ -3,8 +3,9 @@ import strategy.GameDataParser
 import enums.*
 
 Character.Jett
-  .playWith(3000.credits)
+  .playWith(2000.credits)
   .onMap(Map.Ascent)
   .inRound(RoundType.FullBuy)
   .preferredAs(Playstyle.Aggressive)
-  .build(3)
+  .owned(Set(Subtype.Shield))
+  .build(3.items)

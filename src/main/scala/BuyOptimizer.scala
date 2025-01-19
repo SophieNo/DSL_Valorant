@@ -23,12 +23,14 @@ package object valorantdsl {
 
 //   // TODO: Add more preferred styles
 //   sealed trait PreferredStyle
+
   case class PlayerSetup(
     character: Character.Character,
     credits: Int,
     map: Option[Map.Map] = None,
     roundType: Option[RoundType.RoundType] = None,
-    preferredStyle: Option[Playstyle.Playstyle] = None
+    preferredStyle: Option[Playstyle.Playstyle] = None,
+    ownedItems: Set[Subtype.Subtype] = Set.empty
   )
 
   extension (amount: Int) {
@@ -47,7 +49,13 @@ package object valorantdsl {
   private var map: Option[Map.Map] = None
   private var roundType: Option[RoundType.RoundType] = None
   private var preferredStyle: Option[Playstyle.Playstyle] = None
+  private var ownedItems: Set[Subtype.Subtype] = Set.empty
 
+  def owned(items: Set[Subtype.Subtype]): this.type = {
+    ownedItems = items
+    this
+  }
+  
   def onMap(selectedMap: Map.Map): this.type = {
     map = Some(selectedMap)
     this
@@ -64,8 +72,8 @@ package object valorantdsl {
   }
 
   def build(topN: Int): Unit = {
-    val setup = PlayerSetup(character, credits, map, roundType, preferredStyle)
-    Recommender.recommend(setup, Some(character.toString), topN)
+    val setup = PlayerSetup(character, credits, map, roundType, preferredStyle, ownedItems)
+    Recommender.recommend(setup, character, topN)
   }
 }
 }
