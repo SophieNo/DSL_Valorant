@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Brimstone",
+    "role": "Controller",
+    "abilities": ["Fumigène", "Incendiaire", "Stim Beacon", "Orbital Strike"]
+  },
+  {
+    "name": "Jett",
+    "role": "Duelist",
+    "abilities": ["Cloudburst", "Updraft", "Tailwind", "Blade Storm"]
+  }
+]
