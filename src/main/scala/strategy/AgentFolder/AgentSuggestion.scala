@@ -2,7 +2,7 @@ package strategy.AgentFolder
 import play.api.libs.json._
 import scala.io.Source
 import strategy.map.*
-import strategy.AgentFolder.* 
+import strategy.AgentFolder.*
 
 object AgentSuggestion {
 
@@ -26,7 +26,10 @@ object AgentSuggestion {
   def suggestAgents(mapName: String, selectedAgents: List[String]): List[Agent] = {
     val agents = loadAgents()
 
-    // On filtre les agents aps encore sélectionnés
+    // Calcul du nombre d'agents manquants
+    val numberOfAgentsMissing = 5 - selectedAgents.size
+
+    // On filtre les agents non encore sélectionnés
     val availableAgents = agents.filterNot(agent => selectedAgents.contains(agent.name))
 
     // On regroupe les agents par rôle
@@ -41,8 +44,9 @@ object AgentSuggestion {
     ).flatten
 
     // Compléter avec des agents restants
-    val remainingAgents = availableAgents.diff(prioritizedAgents).take(5 - prioritizedAgents.size)
+    val remainingAgents = availableAgents.diff(prioritizedAgents)
 
-    (prioritizedAgents ++ remainingAgents).take(5)
+    // Ne suggérer que le nombre d'agents manquants
+    (prioritizedAgents ++ remainingAgents).take(numberOfAgentsMissing)
   }
 }

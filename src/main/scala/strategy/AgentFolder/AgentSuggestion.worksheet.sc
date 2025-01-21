@@ -7,7 +7,7 @@ maps.foreach(map => println(s"Carte : ${map.name}, Description : ${map.descripti
 
 // Saisie : carte et agents déjà sélectionnés
 val mapName = "Bind"
-val selectedAgents = List("Jett", "Sage", "Brimstone")
+val selectedAgents = List("Jett", "Sage", "Viper", "Omen", "Brimstone")
 
 // Suggestions d’agents
 val suggestions = suggestAgents(mapName, selectedAgents)
