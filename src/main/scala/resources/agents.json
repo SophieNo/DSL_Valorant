@@ -1,12 +1,132 @@
 [
   {
     "name": "Brimstone",
-    "role": "Controller",
-    "abilities": ["Fumigène", "Incendiaire", "Stim Beacon", "Orbital Strike"]
+    "role": "Contrôleur",
+    "abilities": ["Fumigène", "Incendiaire", "Balise Stimulante", "Frappe Orbitale"]
   },
   {
     "name": "Jett",
-    "role": "Duelist",
-    "abilities": ["Cloudburst", "Updraft", "Tailwind", "Blade Storm"]
+    "role": "Duelliste",
+    "abilities": ["Éclat de Brume", "Courant Ascendant", "Vent Arrière", "Tempête de Lames"]
+  },
+  {
+    "name": "Viper",
+    "role": "Contrôleur",
+    "abilities": ["Nuage de Poison", "Écran Toxique", "Morsure de Serpent", "Fosse Viper"]
+  },
+  {
+    "name": "Omen",
+    "role": "Contrôleur",
+    "abilities": ["Voile Ténébreux", "Paranoïa", "Embrumer", "Depuis les Ombres"]
+  },
+  {
+    "name": "Killjoy",
+    "role": "Sentinelle",
+    "abilities": ["Nanoswarm", "Tourelle", "Robot d'Alarme", "Verrouillage"]
+  },
+  {
+    "name": "Cypher",
+    "role": "Sentinelle",
+    "abilities": ["Fil Piégé", "Caméra Espionne", "Cage Cybernétique", "Vol de Neurones"]
+  },
+  {
+    "name": "Sova",
+    "role": "Initiateur",
+    "abilities": ["Flèche de Reconnaissance", "Drone de Reconnaissance", "Flèche Choc", "Fureur du Chasseur"]
+  },
+  {
+    "name": "Sage",
+    "role": "Sentinelle",
+    "abilities": ["Orbe de Soin", "Orbe de Lenteur", "Orbe de Barrière", "Résurrection"]
+  },
+  {
+    "name": "Phoenix",
+    "role": "Duelliste",
+    "abilities": ["Balle Courbe", "Mains Brûlantes", "Mur de Flammes", "Revanche"]
+  },
+  {
+    "name": "Reyna",
+    "role": "Duelliste",
+    "abilities": ["Œil Aveuglant", "Dévoration", "Rejet", "Impératrice"]
+  },
+  {
+    "name": "Raze",
+    "role": "Duelliste",
+    "abilities": ["Grenade Explosive", "Paquet Explosif", "Boom Bot", "Boum Ultime"]
+  },
+  {
+    "name": "Breach",
+    "role": "Initiateur",
+    "abilities": ["Éclat Aveuglant", "Réplique Sismique", "Fracture", "Onde de Choc"]
+  },
+  {
+    "name": "Skye",
+    "role": "Initiateur",
+    "abilities": ["Lumière Guidante", "Reviviscence", "Prédateurs", "Traqueurs"]
+  },
+  {
+    "name": "Yoru",
+    "role": "Duelliste",
+    "abilities": ["Point d'Impact", "Infiltration", "Faux Pas", "Dimension"]
+  },
+  {
+    "name": "Astra",
+    "role": "Contrôleur",
+    "abilities": ["Pulsation Nova", "Nébulosité", "Puits Gravitationnel", "Division Cosmique"]
+  },
+  {
+    "name": "KAY/O",
+    "role": "Initiateur",
+    "abilities": ["FRAG/ment", "FLASH/drive", "ZERO/point", "NULL/cmd"]
+  },
+  {
+    "name": "Chamber",
+    "role": "Sentinelle",
+    "abilities": ["Coup Particulier", "Rendez-vous", "Marque de Fabrication", "Tour de Force"]
+  },
+  {
+    "name": "Neon",
+    "role": "Duelliste",
+    "abilities": ["Voie Rapide", "Relais Éclair", "Vitesse Supersonique", "Surcharge"]
+  },
+  {
+    "name": "Fade",
+    "role": "Initiateur",
+    "abilities": ["Poignée d'Ombre", "Traqueur", "Cauchemar", "Nuit Noire"]
+  },
+  {
+    "name": "Harbor",
+    "role": "Contrôleur",
+    "abilities": ["Cascade", "Marée Montante", "Crique", "Reflux"]
+  },
+  {
+    "name": "Gekko",
+    "role": "Initiateur",
+    "abilities": ["Mosh Pit", "Dizzy", "Wingman", "Thrash"]
+  },
+  {
+    "name": "Deadlock",
+    "role": "Sentinelle",
+    "abilities": ["Barrière de Sonar", "Grappin", "Filet Piégeur", "Annihilation"]
+  },
+  {
+    "name": "Iso",
+    "role": "Duelliste",
+    "abilities": ["Fragmentation", "Coup d'Ombre", "Voile de l'Ombre", "Règne"]
+  },
+  {
+    "name": "Clove",
+    "role": "Contrôleur",
+    "abilities": ["Brume de Minuit", "Étreinte de l'Ombre", "Voile de Minuit", "Nuit Éternelle"]
+  },
+  {
+    "name": "Vyse",
+    "role": "Sentinelle",
+    "abilities": ["Sphère de Surveillance", "Balise de Sécurité", "Champ de Force", "Œil de l'Aigle"]
+  },
+  {
+    "name": "Tejo",
+    "role": "Initiateur",
+    "abilities": ["Onde de Choc", "Flashbang", "Grenade Électrique", "Tempête"]
   }
 ]
