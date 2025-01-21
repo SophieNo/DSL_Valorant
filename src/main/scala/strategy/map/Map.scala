@@ -1,4 +1,4 @@
-
+package strategy.map
 case class Map(
                 name: String,
                 description: String,

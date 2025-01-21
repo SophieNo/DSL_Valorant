@@ -1,3 +1,4 @@
+package strategy.map
 import io.circe.generic.auto.*
 import io.circe.parser.decode
 
