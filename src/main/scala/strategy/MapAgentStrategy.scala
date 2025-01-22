@@ -1,7 +1,7 @@
 package strategy
 
 import strategy.StrategyGenerator
-import strategy.Agent.AgentDataParser
+import strategy.AgentFolder.AgentDataParser
 import strategy.map.MapDataParser
 import strategy.*
 import scala.io.StdIn.readLine

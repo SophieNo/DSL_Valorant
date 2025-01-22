@@ -9,6 +9,7 @@ object NaturalLanguageInterpreter {
     val buyingAdvicePartialPattern2 = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+)".r
     val buyingAdvicePartialPattern3 = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+)".r
     val buyingAdvicePartialPattern4 = "J'ai (\\d+) crédits avec (\\w+)".r
+    val strategyPattern = "donne moi une stratégie pour (\\w+) sur (\\w+)".r
 
     question match {
       case compositionPattern(map, role, agents) =>
@@ -30,6 +31,9 @@ object NaturalLanguageInterpreter {
 
       case buyingAdvicePartialPattern4(credits, agent) =>
         s"buyingadvice:$credits:$agent"
+
+      case strategyPattern(agent, map) =>
+        s"strategy:$map:$agent"
 
       case _ =>
         "unknown"
