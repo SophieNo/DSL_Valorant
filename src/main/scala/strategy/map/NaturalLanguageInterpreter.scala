@@ -1,17 +1,38 @@
 package strategy.map
 
 object NaturalLanguageInterpreter {
-  def interpret(input: String): String = {
-    // Parsing user input for map, team, and intent
-    val mapRegex = "(?i)map ([a-zA-Z]+)".r
-    val teamRegex = "(?i)(attaque|défense)".r
-    val map = mapRegex.findFirstMatchIn(input).map(_.group(1)).getOrElse("unknown")
-    val team = teamRegex.findFirstMatchIn(input).map(_.group(1)).getOrElse("unknown")
+  def interpret(question: String): String = {
+    // Expressions régulières pour les différents cas
+    val compositionPattern = "composition pour tel (\\w+)(?: en (attaque|défense))?(?: sachant (.+))?".r
+    val buyingAdviceFullPattern = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+), (\\w+), avec (.+)".r
+    val buyingAdvicePartialPattern1 = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+), (\\w+)".r
+    val buyingAdvicePartialPattern2 = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+)".r
+    val buyingAdvicePartialPattern3 = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+)".r
+    val buyingAdvicePartialPattern4 = "J'ai (\\d+) crédits avec (\\w+)".r
 
-    if (map != "unknown" && team != "unknown") {
-      s"teambuilder for $map in $team"
-    } else {
-      "Could not understand your input. Please specify the map and team (attaque/défense)."
+    question match {
+      case compositionPattern(map, role, agents) =>
+        val rolePart = if (role != null) s":$role" else ""
+        val agentsPart = if (agents != null) s":$agents" else ""
+        s"composition:$map$rolePart$agentsPart"
+
+      case buyingAdviceFullPattern(credits, agent, map, roundType, playstyle, equipment) =>
+        s"buyingadvice:$credits:$agent:$map:$roundType:$playstyle:$equipment"
+
+      case buyingAdvicePartialPattern1(credits, agent, map, roundType, playstyle) =>
+        s"buyingadvice:$credits:$agent:$map:$roundType:$playstyle"
+
+      case buyingAdvicePartialPattern2(credits, agent, map, roundType) =>
+        s"buyingadvice:$credits:$agent:$map:$roundType"
+
+      case buyingAdvicePartialPattern3(credits, agent, map) =>
+        s"buyingadvice:$credits:$agent:$map"
+
+      case buyingAdvicePartialPattern4(credits, agent) =>
+        s"buyingadvice:$credits:$agent"
+
+      case _ =>
+        "unknown"
     }
   }
 }

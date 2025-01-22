@@ -1,17 +1,13 @@
-import valorant.ValorantDSL._
+import assistant.ValorantAssistant
 
-// Création des joueurs
-val jett = player("Jett", 200)
-val omen = player("Omen", 2500)
-val sova = player("Sova", 1500)
+// Posez simplement vos questions
 
-// Création de l'équipe
-val myTeam = team(jett, omen, sova)
 
-// Recommandations d'achat
-val recommendations = recommendForTeam(myTeam)
-
-// Affichage des recommandations
-println(displayRecommendations(recommendations))
-
+// Posez simplement votre question
+ValorantAssistant.ask("composition pour tel Haven en attaque sachant Jett, Cypher")
+ValorantAssistant.ask("J'ai 12000 crédits avec Viper sur Ascent en FullBuy, Aggressive, avec Shield")
+ValorantAssistant.ask("J'ai 12000 crédits avec Viper sur Ascent en FullBuy, Defensive")
+ValorantAssistant.ask("J'ai 12000 crédits avec Viper sur Ascent en Eco")
+ValorantAssistant.ask("J'ai 12000 crédits avec Jett sur Ascent")
+ValorantAssistant.ask("J'ai 12000 crédits avec Omen")
 

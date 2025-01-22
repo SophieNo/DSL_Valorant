@@ -29,15 +29,16 @@ object Recommender {
   ): List[Weapon] = {
     val gameData = GameDataParser.getGameData
 
+    // Filtrer les armes disponibles
     val availableWeapons = gameData.weapons
-      .filterNot(w => setup.ownedItems.contains(w.subtype))
-      .filter(w => meetsCriteria(w, setup, character))
+      .filterNot(w => setup.ownedItems.contains(w.subtype)) // Exclure les items déjà possédés
+      .filter(w => meetsCriteria(w, setup, character))     // Critères supplémentaires
 
+    // Partitionner les armes en catégories
     val (shields, abilities, weapons) = availableWeapons.partition3(
       _.subtype == Subtype.Shield,
-      w => w.subtype == Subtype.Ability && w.character.contains(character),
-      weapon => weapon.subtype == Subtype.Rifle || weapon.subtype == Subtype.Utility
-
+      w => w.subtype == Subtype.Ability && w.character.contains(character), // Filtrer strictement par agent
+      w => w.subtype == Subtype.Rifle || w.subtype == Subtype.Utility
     )
 
     optimizeCombination(shields, abilities, weapons, setup.credits).take(topN)
@@ -50,12 +51,18 @@ object Recommender {
   ): Boolean = {
     val conditions = weapon.conditions
 
+    val isAgentAbility = weapon.subtype match {
+      case Subtype.Ability => weapon.character.contains(character)
+      case _               => true
+    }
+
     val creditsMatch = conditions.creditsMin.forall(min => setup.credits >= min)
     val mapMatch = conditions.maps.forall(_.isEmpty || setup.map.exists(conditions.maps.get.contains))
-    val roundMatch = conditions.roundType.forall(_.isEmpty || setup.roundType.exists(conditions.roundType.get.contains))
+    val roundMatch = conditions.roundType.forall(_.contains(setup.roundType.getOrElse(RoundType.FullBuy)))
     val styleMatch = conditions.preferredStyle.forall(style => setup.preferredStyle.contains(style))
 
-    creditsMatch && mapMatch && roundMatch && styleMatch
+    // Vérification stricte de toutes les conditions
+    isAgentAbility && creditsMatch && mapMatch && roundMatch && styleMatch
   }
 
   private def optimizeCombination(
@@ -95,5 +102,4 @@ object Recommender {
       (first, second, third)
     }
   }
-
 }

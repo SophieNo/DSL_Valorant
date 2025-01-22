@@ -22,20 +22,20 @@ object AgentSuggestion {
     Json.parse(jsonString).as[List[Map]]
   }
 
-  // Fonction de suggéstion des agents
+  // Fonction de suggestion des agents
   def suggestAgents(mapName: String, selectedAgents: List[String]): List[Agent] = {
     val agents = loadAgents()
 
     // Calcul du nombre d'agents manquants
-    val numberOfAgentsMissing = 5 - selectedAgents.size
+    val numberOfAgentsMissing = Math.max(5 - selectedAgents.size, 0)
 
     // On filtre les agents non encore sélectionnés
-    val availableAgents = agents.filterNot(agent => selectedAgents.contains(agent.name))
+    val availableAgents = agents.filterNot(agent => selectedAgents.map(_.toLowerCase).contains(agent.name.toLowerCase))
 
     // On regroupe les agents par rôle
     val groupedByRole = availableAgents.groupBy(_.role)
 
-    // 1 agent par rôle
+    // Priorité : un agent par rôle
     val prioritizedAgents = List(
       groupedByRole.get("Contrôleur").flatMap(_.headOption),
       groupedByRole.get("Duelliste").flatMap(_.headOption),
