@@ -78,7 +78,7 @@ object ValorantAssistant {
     }
   }
 
-    private def generateStrategy(mapName: String, agentName: String): Unit = {
+  private def generateStrategy(mapName: String, agentName: String): Unit = {
     val maps = MapDataParser.getMapData
     val agents = AgentDataParser.getAgentData
 
@@ -88,14 +88,11 @@ object ValorantAssistant {
     (selectedMap, selectedAgent) match {
       case (Some(map), Some(agent)) =>
         val strategy = StrategyGenerator.generateStrategy(map, agent)
-        println("\nStratégie Générée :")
-        println(s"Carte : ${strategy.map}")
-        println(s"Agent : ${strategy.agent}")
-        println(s"Description : ${strategy.description}")
+        println(s"Stratégie : ${strategy.description}")
       case (None, _) =>
-        println(s"Carte $mapName non reconnue.")
+        println(s"Erreur : La carte '$mapName' est introuvable.")
       case (_, None) =>
-        println(s"Agent $agentName non reconnu.")
+        println(s"Erreur : L'agent '$agentName' est introuvable.")
     }
   }
 }

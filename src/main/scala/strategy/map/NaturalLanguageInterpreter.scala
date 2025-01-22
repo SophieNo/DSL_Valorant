@@ -4,11 +4,11 @@ object NaturalLanguageInterpreter {
   def interpret(question: String): String = {
     // Expressions régulières pour les différents cas
     val compositionPattern = "composition pour tel (\\w+)(?: en (attaque|défense))?(?: sachant (.+))?".r
-    val buyingAdviceFullPattern = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+), (\\w+), avec (.+)".r
-    val buyingAdvicePartialPattern1 = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+), (\\w+)".r
-    val buyingAdvicePartialPattern2 = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+)".r
-    val buyingAdvicePartialPattern3 = "J'ai (\\d+) crédits avec (\\w+) sur (\\w+)".r
-    val buyingAdvicePartialPattern4 = "J'ai (\\d+) crédits avec (\\w+)".r
+    val buyingAdviceFullPattern = "j'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+), (\\w+), avec (.+)".r
+    val buyingAdvicePartialPattern1 = "j'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+), (\\w+)".r
+    val buyingAdvicePartialPattern2 = "j'ai (\\d+) crédits avec (\\w+) sur (\\w+) en (\\w+)".r
+    val buyingAdvicePartialPattern3 = "j'ai (\\d+) crédits avec (\\w+) sur (\\w+)".r
+    val buyingAdvicePartialPattern4 = "j'ai (\\d+) crédits avec (\\w+)".r
     val strategyPattern = "donne moi une stratégie pour (\\w+) sur (\\w+)".r
 
     question match {
