@@ -4,4 +4,4 @@ Bienvenue dans le **Projet-Scala**. Ce projet consiste à développer un DSL (Do
 
 ### Accéder au Wiki
 Cliquez sur le lien ci-dessous pour accéder au Wiki :
-👉 [Wiki du Projet-Scala](https://github.com/SophieNo/Projet-Scala/wiki)
+👉 [Wiki du Projet-Scala](https://github.com/SophieNo/DSL_Valorant/wiki)
